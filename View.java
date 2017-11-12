@@ -8,14 +8,14 @@ public class View extends JPanel {
     private Icon[] icons;
     public View(int[][] cave) {
         icons = new Icon[9];
-        icons[0] = new ImageIcon("../images/boulder.png");
-        icons[1] = new ImageIcon("../images/rockford.png");
-        icons[3] = new ImageIcon("../images/dirt.png");
-        icons[4] = new ImageIcon("../images/diamond.png");
-        icons[5] = new ImageIcon("../images/exitLocked.png");
-        icons[6] = new ImageIcon("../images/exitOpen.png");
-        icons[7] = new ImageIcon("../images/emptySpc.png");
-        icons[8] = new ImageIcon("../images/wall.png");
+        icons[0] = new ImageIcon("./images/boulder.png");
+        icons[1] = new ImageIcon("./images/rockford.png");
+        icons[3] = new ImageIcon("./images/dirt.png");
+        icons[4] = new ImageIcon("./images/diamond.png");
+        icons[5] = new ImageIcon("./images/exitLocked.png");
+        icons[6] = new ImageIcon("./images/exitOpen.png");
+        icons[7] = new ImageIcon("./images/emptySpc.png");
+        icons[8] = new ImageIcon("./images/wall.png");
         setLayout(new GridLayout(CAVE_SIZE,CAVE_SIZE));
         labels = new JLabel[CAVE_SIZE][CAVE_SIZE];
         for (int x = 0; x < CAVE_SIZE; x++) {
